@@ -1,5 +1,3 @@
-import { theme } from './config/vuetify.options.js'
-
 const isProduction = process.env.NODE_ENV === 'production'
 const editorMode = process.env.SWELL_EDITOR === 'true'
 const storeId = process.env.SWELL_STORE_ID
@@ -17,8 +15,6 @@ export default {
         name: 'msapplication-TileImage',
         content: '/favicons/ms-icon-144x144.png',
       },
-      // PWA primary color
-      { name: 'theme-color', content: theme.primary },
       // Facebook
       { property: 'author', content: 'awrora' },
       { property: 'og:site_name', content: 'awrora.ux-maestro.com' },
@@ -130,7 +126,6 @@ export default {
   loading: {
     // color: Set by the swell module.
     continuous: true,
-    color: theme.primary,
   },
 
   /*
