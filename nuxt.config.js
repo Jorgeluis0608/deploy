@@ -1,4 +1,4 @@
-import { theme } from './config/vuetify.options'
+import { theme } from './config/vuetify.options.js'
 
 const isProduction = process.env.NODE_ENV === 'production'
 const editorMode = process.env.SWELL_EDITOR === 'true'
@@ -35,7 +35,7 @@ export default {
     ],
     link: [
       // Favicon
-      { rel: 'icon', type: 'image/x-icon', href: '/favicons/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/static/favicons/favicon.ico' },
       {
         rel: 'apple-touch-icon',
         sizes: '57x57',
